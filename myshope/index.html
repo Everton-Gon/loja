@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShope</title>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+     <!-- ICONS GOOGLE API -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <style>
+        
+        .card{
+            width: 300px;
+            height: 500px;
+            
+        }
+        .card:hover{
+          border: 1px solid blue;
+
+        }
+        .card-image img{
+            max-width: 150px;
+            max-height: 150px;
+           
+        }
+        .card-image{
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #products-list{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .card-content{
+            height: 180px;
+           
+        }
+        .card-content .card-title{
+          font-size: 18px;
+        }
+        .dropdown-content{
+          background-color: rgb(27, 93, 235) ;
+          border-radius: 0 0 5px 5px;
+        }
+     </style>
+      
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="blue darken-3">
+      
+        <div class="nav-wrapper container">
+          <a href="index.html" class="brand-logo">MyShope</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down" >
+            <li><a href="index.html">Inicio</a></li>
+            <li><a class="dropdown-trigger" data-target="dropdown-menu" href="#">Categorias
+            <i class="material-icons right" >arrow_drop_down</i></a></li>
+            <!-- <li><a href="">Eletrônicos</a></li>
+            <li><a href="">Roupas</a></li> -->
+            
+          </ul>
+
+    <!-- Dropdowns -->
+          <ul id="dropdown-menu" class="dropdown-content">
+            <li><a href="eletron.html">Eletronicos</a></li>
+            <li><a href="men.html">Masculino</a></li>
+            <li><a href="women.html">Feminino</a></li>
+            <li><a href="joia.html">Joias</a></li>
+          </ul>
+          
+
+        </div>
+      </nav>
+      <!-- FIM DA NAVBAR -->
+
+      <!-- LISTA DE PRODUTOS -->
+      <div id="products-list">
+        <!-- PRODUTOS DA API -->
+      </div>
+      <script src="index.js"></script>
+    
+</body>
+</html>
